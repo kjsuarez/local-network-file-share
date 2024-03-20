@@ -5,22 +5,27 @@ const app = express()
 const port = 3000
 app.use(express.static(path.join(__dirname, 'views')));
 
+const fileRoutes = require('./routes/files.js');
+app.use('/download', fileRoutes);
+
+// view downloads
+
 app.get('/', (req, res) => {
-  res.sendFile('index.html', {
-    root: 'views'
-  })
+  res.sendFile('index.html', { root: 'views' })
 });
 
-app.get('/poop', (req, res) => {
-  res.download('files/poop.txt', 'poop.txt', function (err) {
-    if (err) {
-      console.log("failed")
-      console.log(err)
-    } else {
-      console.log("it worked")
-    }
-  })
-})
+app.get('/series', (req, res) => {
+  res.sendFile('series.html', { root: 'views' })
+});
+
+app.get('/movies', (req, res) => {
+  res.sendFile('movies.html', { root: 'views' })
+});
+
+app.get('/tng', (req, res) => {
+  res.sendFile('tng.html', { root: 'views' })
+});
+
 
 app.listen(port, '0.0.0.0',() => {
   console.log(`Party on port ${port}`)

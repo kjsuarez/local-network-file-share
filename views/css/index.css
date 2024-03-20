@@ -1,7 +1,71 @@
-li {
-  color: red;
+:root {
+  --color-primary: white;
+  --link-color: white;
+}
+
+html{
+  font-family: sans-serif;
+  color: var(--link-color);
 }
 
 body {
-  background-color: aqua;
+  height: 98%;
+  position: relative;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 40em;
+  background-image: url("../assets/background_1_one_third_floyd_dither.png");
+}
+
+.table_div {
+  width: 100%;
+  display: table;
+}
+
+.row_div {
+  display: table-row
+}
+
+.col {
+  width: 50%; 
+  display: table-cell;
+}
+
+.col_left {
+  text-align: left;
+}
+.col_right {
+  text-align: right;
+  padding-left: 15em;
+}
+
+.description {
+  display: none;
+  font-size: 1.7em;
+}
+
+a {
+  text-decoration: none;
+  color: var(--link-color);
+  text-shadow: black 0 2px;
+}
+
+ul {
+  list-style-type: none;
+  font-size: 1.3em;
+  
+}
+li {
+  width: fit-content;
+}
+
+footer {
+  position:absolute; bottom:1em;
+  padding-top: 1em;
+  width: 100%;
+  font-size: 1em;
+  border-top: 2px solid var(--color-primary);
+  text-align: center;
+  color: var(--color-primary);
 }
