@@ -6,7 +6,7 @@ router.get('/poop', (req, res) => {
         if (err) { console.log(`failed:${err}`)  }
     })
   })
-
+// Movies/shows
   router.get('/angel', (req, res) => {
     res.download('files/Angels Egg(1985).7z', 'Angels Egg(1985).7z', function (err) {
       if (err) { console.log(`failed:${err}`)  }
@@ -32,6 +32,12 @@ router.get('/poop', (req, res) => {
       if (err) { console.log(`failed:${err}`)  }
     })
   })
+  router.get('/kajilion', (req, res) => {
+    res.download('files/Kajillionaire (2020).7z', 'Kajillionaire (2020).7z', function (err) {
+      if (err) { console.log(`failed:${err}`)  }
+    })
+  })
+  
 
   router.get('/kite', (req, res) => {
     res.download('files/Kite 1998 Dual Audio (ENG+JAP).7z', 'Kite 1998 Dual Audio (ENG+JAP).7z', function (err) {
@@ -64,6 +70,21 @@ router.get('/poop', (req, res) => {
       if (err) { console.log(`failed:${err}`)  }
     })
   })
+  router.get('/tng_2', (req, res) => {
+    res.download('files/Star.Trek.The.Next.Generation.S02.7z', 'Star.Trek.The.Next.Generation.S02.7z', function (err) {
+      if (err) { console.log(`failed:${err}`)  }
+    })
+  })
+  router.get('/tng_3', (req, res) => {
+    res.download('files/Star.Trek.The.Next.Generation.S03.7z', 'Star.Trek.The.Next.Generation.S03.7z', function (err) {
+      if (err) { console.log(`failed:${err}`)  }
+    })
+  })
+  router.get('/tng_4', (req, res) => {
+    res.download('files/Star.Trek.The.Next.Generation.S04.7z', 'Star.Trek.The.Next.Generation.S04.7z', function (err) {
+      if (err) { console.log(`failed:${err}`)  }
+    })
+  })
   router.get('/summer_wars', (req, res) => {
     res.download('files/Summer Wars (2009) [1080p].7z', 'Summer Wars (2009) [1080p].7z', function (err) {
       if (err) { console.log(`failed:${err}`)  }
@@ -81,6 +102,122 @@ router.get('/poop', (req, res) => {
   })
   router.get('/wicked_city', (req, res) => {
     res.download('files/Wicked.City.1987.7z', 'Wicked.City.1987.7z', function (err) {
+      if (err) { console.log(`failed:${err}`)  }
+    })
+  })
+
+  //books
+  router.get('/how_dns_works', (req, res) => {
+    res.download('files/How DNS Works.7z', 'How DNS Works.7z', function (err) {
+      if (err) { console.log(`failed:${err}`)  }
+    })
+  })
+
+  router.get('/deadly1', (req, res) => {
+    res.download('files/deadlyclass_vol1.pdf', 'deadlyclass_vol1.pdf', function (err) {
+      if (err) { console.log(`failed:${err}`)  }
+    })
+  })
+
+  router.get('/deadly2', (req, res) => {
+    res.download('files/deadlyclass_vol2.pdf', 'deadlyclass_vol2.pdf', function (err) {
+      if (err) { console.log(`failed:${err}`)  }
+    })
+  })
+
+  router.get('/deadly3', (req, res) => {
+    res.download('files/deadlyclass_vol3.pdf', 'deadlyclass_vol3.pdf', function (err) {
+      if (err) { console.log(`failed:${err}`)  }
+    })
+  })
+
+  router.get('/deadly4', (req, res) => {
+    res.download('files/deadlyclass_vol4.pdf', 'deadlyclass_vol4.pdf', function (err) {
+      if (err) { console.log(`failed:${err}`)  }
+    })
+  })
+
+  router.get('/deadly5', (req, res) => {
+    res.download('files/deadlyclass_vol5.pdf', 'deadlyclass_vol5.pdf', function (err) {
+      if (err) { console.log(`failed:${err}`)  }
+    })
+  })
+
+  router.get('/deadly6', (req, res) => {
+    res.download('files/deadlyclass_vol6.pdf', 'deadlyclass_vol6.pdf', function (err) {
+      if (err) { console.log(`failed:${err}`)  }
+    })
+  })
+
+  router.get('/deadly7', (req, res) => {
+    res.download('files/deadlyclass_vol7.pdf', 'deadlyclass_vol7.pdf', function (err) {
+      if (err) { console.log(`failed:${err}`)  }
+    })
+  })
+
+  router.get('/saga_1', (req, res) => {
+    res.download('files/Saga_vol1.pdf', 'Saga_vol1.pdf', function (err) {
+      if (err) { console.log(`failed:${err}`)  }
+    })
+  })
+
+  router.get('/saga_2', (req, res) => {
+    res.download('files/Saga_vol2.pdf', 'Saga_vol2.pdf', function (err) {
+      if (err) { console.log(`failed:${err}`)  }
+    })
+  })
+
+  router.get('/east', (req, res) => {
+    res.download('files/eastofwest_vol1.pdf', 'eastofwest_vol1.pdf', function (err) {
+      if (err) { console.log(`failed:${err}`)  }
+    })
+  })
+
+  router.get('/invincible', (req, res) => {
+    res.download('files/Invincible_vol1.pdf', 'Invincible_vol1.pdf', function (err) {
+      if (err) { console.log(`failed:${err}`)  }
+    })
+  })
+
+  //software
+  router.get('/aseprite', (req, res) => {
+    res.download('files/Aseprite-v1.2.34.1.exe', 'Aseprite-v1.2.34.1.exe', function (err) {
+      if (err) { console.log(`failed:${err}`)  }
+    })
+  })
+
+  router.get('/vallhalla', (req, res) => {
+    res.download('files/VA-11_Hall_A_1.2.1.3_Windows.zip', 'VA-11_Hall_A_1.2.1.3_Windows.zip', function (err) {
+      if (err) { console.log(`failed:${err}`)  }
+    })
+  })
+  
+  router.get('/isaac', (req, res) => {
+    res.download('files/the_binding_of_isaac_wrath_of_the_lamb-windows-1.48-1355437751.zip', 'the_binding_of_isaac_wrath_of_the_lamb-windows-1.48-1355437751.zip', function (err) {
+      if (err) { console.log(`failed:${err}`)  }
+    })
+  })
+
+  router.get('/ftl', (req, res) => {
+    res.download('files/FTL_v1.6.12_Install.exe', 'FTL_v1.6.12_Install.exe', function (err) {
+      if (err) { console.log(`failed:${err}`)  }
+    })
+  })
+
+  router.get('/breach', (req, res) => {
+    res.download('files/Breach_v1.2.76_Install.exe', 'Breach_v1.2.76_Install.exe', function (err) {
+      if (err) { console.log(`failed:${err}`)  }
+    })
+  })
+
+  router.get('/hotline', (req, res) => {
+    res.download('files/HotlineMiami_windows.zip', 'HotlineMiami_windows.zip', function (err) {
+      if (err) { console.log(`failed:${err}`)  }
+    })
+  })
+
+  router.get('/undertale', (req, res) => {
+    res.download('files/UNDERTALE_.exe', 'UNDERTALE_.exe', function (err) {
       if (err) { console.log(`failed:${err}`)  }
     })
   })
